@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0", minimum-scale="1.0", user-scalable=no>
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/badcf5aef3.js" crossorigin="anonymous"></script>
+    <script src="./jquery-3.7.1.min.js"></script>
+  </head>
+
+    <body>
+
+      
+      <span id="flexbox">
+        <span id="flexbox">ポートフォリオ</span>
+        <span id="flexbox"><a href="PR">PR</a></span>
+        <span id="flexbox"><a href="profile">Profile</a></span>
+      </span>
+      </span>
+
+      <div id="title">
+        <div id="title">ポートフォリオ</div>
+        <div id="title">テスト用</div>
+      </div>
+
+      <h3 id="title-deco">Profile</h3>
+
+      <div id="profile">
+        <img src="./image/AdobeStock_621518710.jpeg">
+        <ul style="list-style: none;">
+        <li class="profile-box jquery">年齢:30歳</li>
+        <li class="profile-box jquery">名前:reG</li>
+        </ul>
+      
+      </div>
+
+      <h3 id="SNS">SNS</h3>
+      <div class="SNS-box jquery"><a class="twitter-timeline" data-width="500" data-height="400" data-theme="light" href="https://twitter.com/mapmaprizriz?ref_src=twsrc%5Etfw">Tweets by mapmaprizriz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+      
+
+      <h3 id="pro">PR</h3>
+      <div id="PR">
+        <div class="pr-box jquery"><span id="font"><i class="fa-solid fa-star"></i>好きな事</span><p>動画制作</p><p>音楽編集</p><p><iframe src="https://www.youtube.com/embed/jiFePRZmPHQ?si=DNlxTFdQFyzJ9QcR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p></div>
+        <div class="pr-box jquery"><span id="font"><i class="fa-solid fa-star"></i>得意な事</span><p>人の機微を感じ取る事</p><p>コミュニケーション</p></div>
+        <div class="pr-box jquery"><span id="font"><i class="fa-solid fa-star"></i>これまでの経歴</span><p>私は、これまで飲食店を中心に</p><p>コミュニケーション能力を培ってきました。</p></div>
+      </div>
+
+      <h3 id="vision-deco">Vision</h3>
+      <div id="vision">
+        <div class="vision-box jquery"><span id="font">デザイナーとしての技術</span><p>動画制作というスキルを活かし</p><p>WEBデザイナーとしての技術を</p><p>磨いて行きたいと考えております。</p>
+        </div>
+      </div>
+      
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.1749988848214!2d140.03928322578724!3d35.67269277258993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602281b9243dabd5%3A0x5e83ec0b894fb110!2z5bmV5by15pys6YO36aeF!5e0!3m2!1sja!2sjp!4v1706328298224!5m2!1sja!2sjp" 
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<footer>
+    <span id="page-top">
+      <span id="page-top"><a href="title">TOPに戻る</a></span>
+    </span>
+  </footer>
+  <script>
+  $(function(){
+    $(window).scroll(function (){
+      $('.jquery').each(function(){
+        var pos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > pos - windowHeight + 100){
+          $(this).addClass('scroll');
+        }
+      });
+    });
+  });
+  </script>
+
+  </body>
+
+
+  </html>
