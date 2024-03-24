@@ -99,6 +99,7 @@
     max-width: 121px;
     max-height: 108px;
     margin-top: 16px;
+    border-radius: 50%;
   }
   .profile-box {
     text-align: center;
